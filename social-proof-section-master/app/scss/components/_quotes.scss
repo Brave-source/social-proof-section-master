@@ -1,0 +1,43 @@
+.quotes {
+    --spacer: 2rem;
+
+    li {
+        list-style: none;
+
+        &:nth-child(2) {
+            transform: translateY(1rem);
+        }
+
+        &:nth-child(3) {
+            transform: translateY(2rem);
+        }
+    }
+
+    blockquote {
+        background: var(--clr-primary-700);
+        color: var(--clr-primary-200);
+        text-align: left;
+        border-radius: var(--br);
+        padding: var(--spacer);
+        max-width: 25rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    img {
+        width: 3rem;
+        border-radius: 50%;
+        margin-right: var(--spacer);
+    } 
+    
+    .name {
+        font-weight: 800;
+    }
+
+    .status {
+        color: hsl(333, 80%, 67%);
+    }
+    .quote {
+        margin-top: var(--spacer);
+    }   
+}
